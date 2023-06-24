@@ -16,16 +16,18 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		for (j = (i == 0 ? 1 : i); j < 100; j++)
+		for (j = i; j < 100; j++)
 		{
-			putchar(i / 10 + '0');
-			putchar(i % 10 + '0');
-			putchar(' ');
-			putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
+			if (i == j)
+				continue;
 
-			if (!(i == 99 && j == 99))
+			if (i < j)
 			{
+				putchar(i / 10 + '0');
+				putchar(i % 10 + '0');
+				putchar(' ');
+				putchar(j / 10 + '0');
+				putchar(j % 10 + '0');
 				putchar(',');
 				putchar(' ');
 			}
