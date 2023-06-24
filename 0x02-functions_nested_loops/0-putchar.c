@@ -15,7 +15,7 @@ int main(void)
 	char message[] = "_putchar";
 	int length = sizeof(message) - 1;
 	int i;
-	
+
 	for (i = 0; i < length; i++)
 	{
 		_putchar(message[i]);
