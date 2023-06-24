@@ -1,11 +1,22 @@
 #include "main.h"
 
 /*betty style doc for function main goes there */
+
 int _putchar(char c);
+void print_alphabet(void);
 
 /**
- * print_alphabet - prints the alphabet in lowercase
+ * main - check the code
+ *
+ * Return: Always 0.
  */
+int main(void)
+{
+    print_alphabet();
+	
+    return (0);
+}
+
 void print_alphabet(void)
 {
     char letter = 'a';
@@ -18,5 +29,3 @@ void print_alphabet(void)
 
     _putchar('\n');
 }
-
-void print_alphabet(void);
