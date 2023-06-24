@@ -1,5 +1,8 @@
 #include "main.h"
-#include PUTCHAR_H
+#if PUTCHAR_H
+	#include PUTCHAR_H
+#endif
+
 /*betty style doc for function main goes there */
 /**
  *main - Entry point
