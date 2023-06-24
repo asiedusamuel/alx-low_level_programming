@@ -13,14 +13,8 @@
 int main(void)
 {
 	char letter;
-	int i;
 
-	for (i = 0; i < 10; i++)
-	{
-		putchar(i + '0');
-	}
-
-	for (letter = 'a'; letter <= 'f'; letter++)
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
 		putchar(letter);
 	}
