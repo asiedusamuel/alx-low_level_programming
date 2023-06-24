@@ -1,3 +1,4 @@
+#include PUTCHAR_H
 /*betty style doc for function main goes there */
 /**
  *main - Entry point
