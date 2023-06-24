@@ -3,12 +3,19 @@
 /*betty style doc for function main goes there */
 
 int _putchar(char c);
+void print_alphabet(void);
 
 /**
- *print_alphabet
+ * main - check the code
  *
- *Return: VOID
+ * Return: Always 0.
  */
+int main(void)
+{
+    print_alphabet();
+    return (0);
+}
+
 void print_alphabet(void)
 {
 	char letter;
