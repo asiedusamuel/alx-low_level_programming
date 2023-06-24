@@ -13,8 +13,8 @@ int main(void)
 {
 	char message[] = "_putchar";
 	int length = sizeof(message) - 1;
-
-	for (int i = 0; i < length; i++)
+	int i;
+	for (i = 0; i < length; i++)
 	{
 		_putchar(message[i]);
 	}
