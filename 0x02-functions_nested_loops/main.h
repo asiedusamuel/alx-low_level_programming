@@ -2,6 +2,8 @@
 *#include "_putchar.c"
 **/
 
+int _putchar(char c);
+
 int print_alphabet(void)
 {
 	char letter;
