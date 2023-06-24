@@ -1,16 +1,6 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
-/*more headers goes there */
-
-/*betty style doc for function main goes there */
-/**
- *main - Entry point
- *
- *Return: Always 0 (Success)
- */
-int main(void)
+int main()
 {
 	int i, j;
 
@@ -18,16 +8,13 @@ int main(void)
 	{
 		for (j = i; j < 100; j++)
 		{
-			if (i == j)
-				continue;
-
 			if (i < j)
 			{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
 				putchar(' ');
-				putchar(j / 10 + '0');
-				putchar(j % 10 + '0');
+				putchar((j / 10) + '0');
+				putchar((j % 10) + '0');
 				putchar(',');
 				putchar(' ');
 			}
@@ -36,5 +23,5 @@ int main(void)
 
 	putchar('\n');
 
-	return (0);
+	return 0;
 }
