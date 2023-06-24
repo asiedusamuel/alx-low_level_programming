@@ -4,6 +4,17 @@
 
 int _putchar(char c);
 
+/**
+ *main - Entry point
+ *
+ *Return: Always 0 (Success)
+ */
+int main(void)
+{
+    print_alphabet();
+	return (0);
+}
+
 int print_alphabet(void)
 {
 	char letter;
@@ -18,14 +29,3 @@ int print_alphabet(void)
 	return (0);
 }
 
-
-/**
- *main - Entry point
- *
- *Return: Always 0 (Success)
- */
-int main(void)
-{
-    print_alphabet();
-	return (0);
-}
