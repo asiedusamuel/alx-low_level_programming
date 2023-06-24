@@ -1,3 +1,5 @@
+#include "_putchar.c"
+
 /*betty style doc for function main goes there */
 /**
  *main - Entry point
