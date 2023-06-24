@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <_putchar.c>
+#include <main.h>
 
 /*betty style doc for function main goes there */
 /**
@@ -11,7 +11,7 @@
 int main(void)
 {
 	char message[] = "_putchar";
-	int length = sizeof(message) - 1;	// Exclude the null terminator
+	int length = sizeof(message) - 1;
 
 	for (int i = 0; i < length; i++)
 	{
