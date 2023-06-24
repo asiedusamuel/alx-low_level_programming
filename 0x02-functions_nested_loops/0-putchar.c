@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*betty style doc for function main goes there */
-int _putchar(char c); 
+int _putchar(char c);
 /**
  *main - Entry point
  *
@@ -16,6 +16,8 @@ int main(void)
 	{
 		_putchar(message[i]);
 	}
-	
+
+	_putchar('\n');
+
 	return (0);
 }
