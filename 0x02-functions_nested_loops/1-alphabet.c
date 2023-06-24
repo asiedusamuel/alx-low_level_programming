@@ -5,9 +5,9 @@
 int _putchar(char c);
 
 /**
- *main - Entry point
+ *print_alphabet
  *
- *Return: Always 0 (Success)
+ *Return: VOID
  */
 void print_alphabet(void)
 {
