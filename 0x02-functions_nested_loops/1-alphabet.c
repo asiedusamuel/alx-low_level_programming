@@ -2,7 +2,6 @@
 
 /*betty style doc for function main goes there */
 
-int _putchar(char c);
 void print_alphabet(void);
 
 /**
