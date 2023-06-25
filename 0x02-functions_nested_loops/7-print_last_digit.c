@@ -1,6 +1,7 @@
 #include "main.h"
 
 /*betty style doc for function main goes there */
+int _putchar(char c);
 
 /**
  *print_last_digit - computes the absolute value of an integer
@@ -10,5 +11,9 @@
  */
 int print_last_digit(int n)
 {
-	return (n % 10);
+	int lastDigit = n % 10;
+	
+	_putchar(lastDigit+'0');
+	
+	return (lastDigit);
 }
