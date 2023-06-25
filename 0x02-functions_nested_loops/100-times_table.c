@@ -13,9 +13,17 @@ int _putchar(char c);
 void print_times_table(int n)
 {
 	int i, j;
+	int last_row = n;
 
 	if (n < 0 || n > 15)
 	{
+		return;
+	}
+
+	if (n == 0)
+	{
+		_putchar(n + '0');
+		_putchar('\n');
 		return;
 	}
 
@@ -28,10 +36,15 @@ void print_times_table(int n)
 			if (result < 10)
 			{
 				_putchar(result + '0');
-				if (j != n)
+				if (i != n)
 				{
 					_putchar(',');
 				}
+				else
+				{
+					if (j != n) _putchar(',');
+				}
+
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
@@ -40,10 +53,15 @@ void print_times_table(int n)
 			{
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-				if (j != n)
+				if (i != n)
 				{
 					_putchar(',');
 				}
+				else
+				{
+					if (j != n) _putchar(',');
+				}
+
 				_putchar(' ');
 				_putchar(' ');
 			}
@@ -52,9 +70,13 @@ void print_times_table(int n)
 				_putchar(result / 100 + '0');
 				_putchar((result / 10) % 10 + '0');
 				_putchar(result % 10 + '0');
-				if (j != n)
+				if (i != n)
 				{
 					_putchar(',');
+				}
+				else
+				{
+					if (j != n) _putchar(',');
 				}
 
 				_putchar(' ');
