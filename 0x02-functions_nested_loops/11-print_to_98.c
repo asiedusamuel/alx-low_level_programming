@@ -24,13 +24,24 @@ void print_to_98(int n)
     }
     else
     {
-        for (; n > 98; n--)
-        {
-            _putchar(n / 10 + '0');
-            _putchar(n % 10 + '0');
-            _putchar(',');
-            _putchar(' ');
+        int i;
+        
+        for (i = n; i >= 98; i--) {
+            if (i > 99) {
+                _putchar(i / 100 + '0');
+                _putchar((i / 10) % 10 + '0');
+                _putchar(i % 10 + '0');
+            } else {
+                _putchar(i / 10 + '0');
+                _putchar(i % 10 + '0');
+            }
+    
+            if (i > 98) {
+                _putchar(',');
+                _putchar(' ');
+            }
         }
+
     }
 
     _putchar('9');
