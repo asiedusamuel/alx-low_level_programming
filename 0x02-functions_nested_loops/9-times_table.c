@@ -21,10 +21,8 @@ void times_table(void)
 			
 			if (result < 10)
 			{
-				if (count != i && result > 0)
-				{
-					_putchar(' ');
-				}
+				
+				_putchar(' ');
 				_putchar(result + '0');
 			}
 			else
