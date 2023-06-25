@@ -9,15 +9,15 @@
 int main(void)
 {
 	int i, limit = 50;
-    unsigned long long int fib1 = 1, fib2 = 2;
+    int fib[50];
+    fib[0] = 1;
+    fib[1] = 2;
 
-    printf("%llu, %llu", fib1, fib2);
+    printf("%d, %d", fib[0], fib[1]);
 
-    for (i = 3; i <= limit; i++) {
-        unsigned long long int fib = fib1 + fib2;
-        printf(", %llu", fib);
-        fib1 = fib2;
-        fib2 = fib;
+    for (int i = 2; i < limit; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        printf(", %d", fib[i]);
     }
 
     printf("\n");
