@@ -1,12 +1,6 @@
 #include "main.h"
 
 /*betty style doc for function main goes there */
-#ifndef PUTCHAR_H
-#define PUTCHAR_H
-
-int _putchar(char c);
-
-#endif
 
 
 
