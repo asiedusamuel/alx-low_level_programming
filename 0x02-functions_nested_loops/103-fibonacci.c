@@ -13,10 +13,11 @@ int main(void)
     int current = 2;
 
     while (current <= limit) {
+        int next = prev + current;
+		
         if (current % 2 == 0) {
             sum += current;
         }
-        int next = prev + current;
         prev = current;
         current = next;
     }
