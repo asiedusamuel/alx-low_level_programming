@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int n = 96;
+	int n = 98;
 	unsigned long prev = 1;
 	unsigned long current = 2;
 	int count = 2;
