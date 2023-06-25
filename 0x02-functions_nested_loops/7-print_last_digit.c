@@ -2,7 +2,7 @@
 
 /*betty style doc for function main goes there */
 int _putchar(char c);
-int _abs(char c);
+int _abs(int c);
 
 /**
  *print_last_digit - computes the absolute value of an integer
