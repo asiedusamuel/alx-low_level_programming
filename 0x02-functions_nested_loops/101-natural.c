@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
 	int limit = 1024;
 	int sum = 0;
