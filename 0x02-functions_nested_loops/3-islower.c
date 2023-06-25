@@ -3,9 +3,10 @@
 /*betty style doc for function main goes there */
 
 /**
- *_islower - check if char is lower
+ * _islower - checks if a character is lowercase
+ * @c: the character to be checked
  *
- *Return: int.
+ * Return: 1 if the character is lowercase, 0 otherwise
  */
 int _islower(int c)
 {
