@@ -10,4 +10,11 @@
 
 	#endif
 
+	#ifndef MUL_H
+	#define MUL_H
+
+	int mul(int, int);
+
+	#endif
+
 #endif /* MAIN_H */
