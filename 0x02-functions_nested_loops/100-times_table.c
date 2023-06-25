@@ -23,20 +23,20 @@ void print_times_table(int n)
             int result = i * j;
 
             if (j > 0) {
-                _putchar('\t'); // Add a tab before each number (except the first column)
+                _putchar('\t');
             }
 
             if (result < 10) {
-                _putchar(' '); // Add a space before single-digit numbers
+                _putchar(' ');
             }
 
-            _putchar(result + '0'); // Print the number
+            _putchar(result + '0');
 
             if (j != n) {
-                _putchar(','); // Print a comma between numbers except for the last one
+                _putchar(',');
             }
         }
 
-        _putchar('\n'); // Move to the next row
+        _putchar('\n');
     }
 }
