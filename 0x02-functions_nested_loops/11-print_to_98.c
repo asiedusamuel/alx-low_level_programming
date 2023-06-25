@@ -16,13 +16,19 @@ void print_to_98(int n)
     if (n > 98)
     {
         /* Print numbers in descending order from n to 98 */
-        while (n > 98)
+        while (n >= 98)
         {
             _putchar(n / 100 + '0'); /* Print hundreds digit */
             _putchar((n / 10) % 10 + '0'); /* Print tens digit */
             _putchar(n % 10 + '0'); /* Print ones digit */
-            _putchar(','); /* Print comma */
-            _putchar(' '); /* Print space */
+            
+            /* Check if n is not equal to 98 */
+            if (n != 98)
+            {
+                _putchar(','); /* Print comma */
+                _putchar(' '); /* Print space */
+            }
+            
             n--;
         }
     }
@@ -30,19 +36,22 @@ void print_to_98(int n)
     else if (n < 98)
     {
         /* Print numbers in ascending order from n to 98 */
-        while (n < 98)
+        while (n <= 98)
         {
             _putchar(n / 100 + '0'); /* Print hundreds digit */
             _putchar((n / 10) % 10 + '0'); /* Print tens digit */
             _putchar(n % 10 + '0'); /* Print ones digit */
-            _putchar(','); /* Print comma */
-            _putchar(' '); /* Print space */
+            
+            /* Check if n is not equal to 98 */
+            if (n != 98)
+            {
+                _putchar(','); /* Print comma */
+                _putchar(' '); /* Print space */
+            }
+            
             n++;
         }
     }
 
-    /* Print 98 at the end */
-    _putchar('9');
-    _putchar('8');
     _putchar('\n');
 }
