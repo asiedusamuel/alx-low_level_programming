@@ -10,6 +10,7 @@ int main(void)
 	int prev = 1;
 	int current = 2;
 	int count = 2;
+	int n = 98;
 
 	printf("%d, %d", prev, current);
 
