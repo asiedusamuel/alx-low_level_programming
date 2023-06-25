@@ -12,46 +12,34 @@ int _putchar(char c);
  */
 void print_to_98(int n)
 {
-	/* Check if n is greater than 98 */
-    if (n > 98)
+	if (n <= 98)
     {
-        /* Print numbers in descending order from n to 98 */
-        while (n >= 98)
+        for (; n <= 98; n++)
         {
-            _putchar(n / 100 + '0'); /* Print hundreds digit */
-            _putchar((n / 10) % 10 + '0'); /* Print tens digit */
-            _putchar(n % 10 + '0'); /* Print ones digit */
-            
-            /* Check if n is not equal to 98 */
+            _putchar('0' + (n / 10));  /* Print tens digit */
+            _putchar('0' + (n % 10));  /* Print ones digit */
+
             if (n != 98)
             {
-                _putchar(','); /* Print comma */
-                _putchar(' '); /* Print space */
+                _putchar(',');  /* Print comma */
+                _putchar(' ');  /* Print space */
             }
-            
-            n--;
         }
     }
-    /* Check if n is less than 98 */
-    else if (n < 98)
+    else
     {
-        /* Print numbers in ascending order from n to 98 */
-        while (n <= 98)
+        for (; n >= 98; n--)
         {
-            _putchar(n / 100 + '0'); /* Print hundreds digit */
-            _putchar((n / 10) % 10 + '0'); /* Print tens digit */
-            _putchar(n % 10 + '0'); /* Print ones digit */
-            
-            /* Check if n is not equal to 98 */
+            _putchar('0' + (n / 10));  /* Print tens digit */
+            _putchar('0' + (n % 10));  /* Print ones digit */
+
             if (n != 98)
             {
-                _putchar(','); /* Print comma */
-                _putchar(' '); /* Print space */
+                _putchar(',');  /* Print comma */
+                _putchar(' ');  /* Print space */
             }
-            
-            n++;
         }
     }
 
-    _putchar('\n');
+    _putchar('\n');  /* Print new line */
 }
