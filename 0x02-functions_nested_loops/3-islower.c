@@ -5,7 +5,7 @@
 /**
  *_islower - check if char is lower
  *
- *Return: void.
+ *Return: int.
  */
 int _islower(int c)
 {
