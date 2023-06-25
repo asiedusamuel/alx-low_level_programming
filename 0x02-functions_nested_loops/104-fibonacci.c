@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int prev = 1;
-	int current = 2;
-	int count = 2;
 	int n = 98;
+	unsigned long prev = 1;
+	unsigned long current = 2;
+	int count = 2;
 
-	printf("%d, %d", prev, current);
+	printf("%lu, %lu", prev, current);
 
 	while (count < n)
 	{
-		int next = prev + current;
-		printf(", %d", next);
+		unsigned long next = prev + current;
+		
+		printf(", %lu", next);
 		prev = current;
 		current = next;
 		count++;
