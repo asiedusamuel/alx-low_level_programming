@@ -13,7 +13,6 @@ int _putchar(char c);
 void print_times_table(int n)
 {
 	int i, j;
-	int last_row = n;
 
 	if (n < 0 || n > 15)
 	{
