@@ -17,4 +17,18 @@
 
 	#endif
 
+	#ifndef PUTCHAR_H
+	#define PUTCHAR_H
+
+	int _putchar(char c);
+
+	#endif
+
+	#ifndef PRINT_NUM_H
+	#define PRINT_NUM_H
+
+	void print_numbers(void);
+
+	#endif
+
 #endif /* MAIN_H */
