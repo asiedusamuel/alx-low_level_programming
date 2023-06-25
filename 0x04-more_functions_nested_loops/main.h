@@ -38,4 +38,11 @@
 
 	#endif
 
+	#ifndef MORE_NUM_H
+	#define MORE_NUM_H
+
+	void more_numbers(void);
+
+	#endif
+
 #endif /* MAIN_H */
