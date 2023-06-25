@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int n = 98;
+	int n = 96;
 	unsigned long prev = 1;
 	unsigned long current = 2;
 	int count = 2;
@@ -17,14 +17,12 @@ int main(void)
 	while (count < n)
 	{
 		unsigned long next = prev + current;
-		
+
 		printf(", %lu", next);
 		prev = current;
 		current = next;
 		count++;
 	}
-
-	printf("\n");
 
 	return (0);
 }
