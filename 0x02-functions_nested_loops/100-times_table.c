@@ -4,7 +4,7 @@
 int _putchar(char c);
 
 /**
- *times_table - prints the 9 times table, starting with 0.
+ *print_times_table - prints the n times table, starting with 0.
  *
  *@n: The integer to be multiply.
  *
@@ -13,6 +13,7 @@ int _putchar(char c);
 void print_times_table(int n)
 {
 	int i, j;
+	
 	if (n < 0 || n > 15)
 	{
 		return;
