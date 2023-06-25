@@ -15,7 +15,7 @@ int main(void)
 
     printf("%lu, %lu", fib[0], fib[1]);
 
-    for (int i = 2; i < limit; i++) {
+    for (i = 2; i < limit; i++) {
         fib[i] = fib[i - 1] + fib[i - 2];
         printf(", %lu", fib[i]);
     }
