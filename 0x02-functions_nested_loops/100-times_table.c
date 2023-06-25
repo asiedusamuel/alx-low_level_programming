@@ -102,6 +102,5 @@ void print_times_table(int n)
         }
 
         _putchar('\n');
-        //if(i!=n)_putchar(',');
     }
 }
