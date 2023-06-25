@@ -11,11 +11,11 @@ int main(void)
 	int i, limit = 50;
     unsigned long long int fib1 = 1, fib2 = 2;
 
-    printf("%llu, %llu", fib1, fib2);  // Print the first two Fibonacci numbers
+    printf("%llu, %llu", fib1, fib2);
 
     for (i = 3; i <= limit; i++) {
         unsigned long long int fib = fib1 + fib2;
-        printf(", %llu", fib);  // Print the current Fibonacci number
+        printf(", %llu", fib);
         fib1 = fib2;
         fib2 = fib;
     }
