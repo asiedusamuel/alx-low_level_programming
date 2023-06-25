@@ -3,6 +3,7 @@
 #include "3-islower.h"
 #include "4-isalpha.h"
 #include "print_sign.h"
+#include "6-abs.h"
 #ifndef PUTCHAR_H
 #define PUTCHAR_H
 
