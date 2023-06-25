@@ -6,11 +6,11 @@ int _putchar(char c);
 /**
  * add - Adds two integers and returns the result.
  *
- * @num1: The first integer to be added.
+ * @n: The first integer to be added.
  *
  * Return: void.
  */
-void print_to_98(int num1)
+void print_to_98(int n)
 {
 	/* Check if n is greater than 98 */
     if (n > 98)
