@@ -13,7 +13,7 @@ int _putchar(char c);
 void print_times_table(int n)
 {
 	if (n < 0 || n > 15) {
-        return; // Exit the function if n is out of range
+        return;
     }
 
     int i, j;
@@ -23,17 +23,17 @@ void print_times_table(int n)
             int result = i * j;
 
             if (j > 0) {
-                _putchar('\t'); // Add a tab before each number (except the first column)
+                _putchar('\t');
             }
 
             if (result < 10) {
-                _putchar(result + '0'); // Print single-digit numbers
+                _putchar(result + '0');
             } else {
-                _putchar((result / 10) + '0'); // Print tens digit
-                _putchar((result % 10) + '0'); // Print ones digit
+                _putchar((result / 10) + '0');
+                _putchar((result % 10) + '0');
             }
         }
 
-        _putchar('\n'); // Move to the next row
+        _putchar('\n');
     }
 }
