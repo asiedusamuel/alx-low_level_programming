@@ -1,4 +1,1 @@
-#include "1-alphabet.c"
-/**
-*#include "_putchar.c"
-**/
+#include "print_alphabet.h"
