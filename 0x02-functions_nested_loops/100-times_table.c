@@ -32,6 +32,7 @@ void print_times_table(int n)
                 _putchar(',');
                 _putchar(' ');
 
+                // Adjust spacing based on number of digits
                 if (result < 10) {
                     _putchar(' ');
                     _putchar(' ');
