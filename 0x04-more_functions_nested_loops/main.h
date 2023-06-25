@@ -31,4 +31,11 @@
 
 	#endif
 
+	#ifndef PRINT_MOST_NUM_H
+	#define PRINT_MOST_NUM_H
+
+	void print_most_numbers(void);
+
+	#endif
+
 #endif /* MAIN_H */
