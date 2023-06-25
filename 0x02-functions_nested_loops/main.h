@@ -2,6 +2,7 @@
 #include "print_alphabet_x10.h"
 #include "3-islower.h"
 #include "4-isalpha.h"
+#include "print_sign.h"
 #ifndef PUTCHAR_H
 #define PUTCHAR_H
 
