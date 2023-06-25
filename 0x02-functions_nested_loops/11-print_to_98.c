@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*betty style doc for function main goes there */
-
+int _putchar(char c);
 
 /**
  * add - Adds two integers and returns the result.
