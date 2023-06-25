@@ -8,7 +8,7 @@ int _putchar(char c);
  *
  *Return: void
  */
-int jack_bauer(int n)
+void jack_bauer(void)
 {
 	int hour, minute;
 
