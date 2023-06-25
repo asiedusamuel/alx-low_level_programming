@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *mul - multiply parameters.
+ *print_numbers - print numbers from 0 to 9.
  *
  *Return: void.
  */
