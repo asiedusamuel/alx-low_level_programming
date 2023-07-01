@@ -9,6 +9,8 @@
  */
 void print_number(int n)
 {
+    int divisor, temp;
+	
 	if (n == 0) {
         _putchar('0');
         return;
@@ -19,8 +21,8 @@ void print_number(int n)
         n = -n;
     }
 
-    int divisor = 1;
-    int temp = n;
+    divisor = 1;
+    temp = n;
 
     while (temp > 9) {
         divisor *= 10;
