@@ -1,48 +1,17 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HOLBERTON_H_
+#define HOLBERTON_H_
 
-#include <stdio.h>
+int _putchar(char c);
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
+void reverse_array(int *a, int n);
+char *string_toupper(char *);
+char *cap_string(char *);
+void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+void print_buffer(char *b, int size);
+char *rot13(char *);
 
-	#ifndef STR_CONCAT_H
-	#define STR_CONCAT_H
-
-	char *_strcat(char *dest, char *src);
-
-	#endif
-	
-	#ifndef STR_CONCAT_N_H
-	#define STR_CONCAT_N_H
-
-	char *_strncat(char *dest, const char *src, int n);
-
-	#endif
-	
-	#ifndef PRINT_NUMBER_H
-	#define PRINT_NUMBER_H
-
-	void print_number(int n);
-
-	#endif
-	
-	#ifndef PRINT_BUFFER_H
-	#define PRINT_BUFFER_H
-
-	print_buffer(char *b, int size);
-
-	#endif
-	
-	#ifndef ADD_INFINITE_H
-	#define ADD_INFINITE_H
-
-	char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
-	#endif
-
-	#ifndef PUTCHAR_H
-	#define PUTCHAR_H
-
-	int _putchar(char c);
-
-	#endif
-
-#endif /* MAIN_H */
+#endif
