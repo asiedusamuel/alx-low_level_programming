@@ -16,6 +16,13 @@
 	char *_strncat(char *dest, const char *src, int n);
 
 	#endif
+	
+	#ifndef PRINT_NUMBER_H
+	#define PRINT_NUMBER_H
+
+	void print_number(int n);
+
+	#endif
 
 	#ifndef PUTCHAR_H
 	#define PUTCHAR_H
