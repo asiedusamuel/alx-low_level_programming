@@ -3,9 +3,9 @@
 /**
  *_strcat - Concatenates the source string to the destination string
  *
- *@*dest The destination string to which the source string will be appended.
+ *@dest: The destination string to which the source string will be appended.
  *
- *@*src The source string that will be appended to the destination string.
+ *@src: The source string that will be appended to the destination string.
  *
  *Return: A pointer to the destination string.
  */
