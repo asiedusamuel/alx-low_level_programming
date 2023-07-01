@@ -16,6 +16,13 @@
 	char *_strncat(char *dest, const char *src, int n);
 
 	#endif
+	
+	#ifndef STR_COPY_N_H
+	#define STR_COPY_N_H
+
+	char *_strncpy(char *dest, char *src, int n);
+
+	#endif
 
 	#ifndef PUTCHAR_H
 	#define PUTCHAR_H
