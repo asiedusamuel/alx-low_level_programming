@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *reverse_array - Reverses the content of an array of integers.
+ *string_toupper - Changes all lowercase letters to uppercase
  *
  *@str: The string to be modified.
  *
