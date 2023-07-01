@@ -9,6 +9,13 @@
 	char *_strcat(char *dest, char *src);
 
 	#endif
+	
+	#ifndef STR_CONCAT_N_H
+	#define STR_CONCAT_N_H
+
+	char *_strncat(char *dest, const char *src, int n);
+
+	#endif
 
 	#ifndef PUTCHAR_H
 	#define PUTCHAR_H

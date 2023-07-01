@@ -7,13 +7,14 @@
  *
  *@src: The source string that will be appended to the destination string.
  *
- *@n: The maximum number of characters to be concatenated from the source string
+ *@n: Max number of characters to be concatenated
  *
  *Return: A pointer to the destination string.
  */
 char *_strncat(char *dest, const char *src, int n)
 {
 	int dest_len, i;
+	
 	dest_len = 0;
 	i = 0;
 
