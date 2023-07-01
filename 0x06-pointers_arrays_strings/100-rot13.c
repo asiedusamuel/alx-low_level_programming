@@ -9,7 +9,8 @@
  */
 char *rot13(char *str)
 {
-	int index, pos;
+	int index;
+	char *pos;
 
 	char *ptr = str;
 	char *alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
