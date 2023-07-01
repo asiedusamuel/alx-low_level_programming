@@ -23,6 +23,13 @@
 	void print_number(int n);
 
 	#endif
+	
+	#ifndef ADD_INFINITE_H
+	#define ADD_INFINITE_H
+
+	char *infinite_add(char *n1, char *n2, char *r, int size_r);
+
+	#endif
 
 	#ifndef PUTCHAR_H
 	#define PUTCHAR_H
