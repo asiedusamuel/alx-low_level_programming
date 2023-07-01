@@ -9,36 +9,12 @@
  */
 void print_number(int n)
 {
-	int divisor, temp;
-
-	if (n == 0)
+	if (n / 10 != 0)
 	{
-		_putchar('0');
-		return;
+		print_number(n / 10);
 	}
 
-	if (n < 0)
-	{
-		_putchar('-');
-		_putchar(n + '0');
-		n = -n;
-	}
+	char digit = '0' + (n < 0 ? -n : n) % 10;
 
-	divisor = 1;
-	temp = n;
-
-	while (temp > 9)
-	{
-		divisor *= 10;
-		temp /= 10;
-	}
-
-	while (divisor > 0)
-	{
-		int digit = n / divisor;
-
-		_putchar('0' + digit);
-		n %= divisor;
-		divisor /= 10;
-	}
+	_putchar(digit);
 }
