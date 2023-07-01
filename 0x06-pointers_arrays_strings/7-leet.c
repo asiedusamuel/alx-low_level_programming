@@ -20,7 +20,8 @@ char *leet(char *str)
 		while (i < 5)
 		{
 			if (*ptr == letters[i] || *ptr == (letters[i] - ('a' - 'A')))
-			{ 	*ptr = leetChars[i];
+			{ 	
+				*ptr = leetChars[i];
 				break;
 			}
 
