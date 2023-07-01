@@ -9,31 +9,35 @@
  */
 void print_number(int n)
 {
-    int divisor, temp;
-	
-	if (n == 0) {
-        _putchar('0');
-        return;
-    }
+	int divisor, temp;
 
-    if (n < 0) {
-        _putchar('0' + n);
-        n = -n;
-    }
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 
-    divisor = 1;
-    temp = n;
+	if (n < 0)
+	{
+		_putchar('-' + n);
+		n = -n;
+	}
 
-    while (temp > 9) {
-        divisor *= 10;
-        temp /= 10;
-    }
+	divisor = 1;
+	temp = n;
 
-    while (divisor > 0) {
-        int digit = n / divisor;
-		
-        _putchar('0' + digit);
-        n %= divisor;
-        divisor /= 10;
-    }
+	while (temp > 9)
+	{
+		divisor *= 10;
+		temp /= 10;
+	}
+
+	while (divisor > 0)
+	{
+		int digit = n / divisor;
+
+		_putchar('0' + digit);
+		n %= divisor;
+		divisor /= 10;
+	}
 }
