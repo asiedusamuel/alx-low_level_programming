@@ -17,6 +17,15 @@ void print_number(int n)
 		return;
 	}
 
+	if (n <= 2147483647) 
+	{
+        _putchar('-');
+        print_number(-(n / 10));
+        _putchar('0' - (n % 10));
+
+        return;
+    }
+
 	if (n < 0)
 	{
 		_putchar('-');
