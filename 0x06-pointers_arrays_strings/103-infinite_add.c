@@ -14,45 +14,40 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int len1, len2, carry, i, digit1, digit2, sum;
+	int i, j, k, l, m, n;
 
-	len1 = strlen(n1);
-	len2 = strlen(n2);
-
-	if (len1 > size_r - 1 || len2 > size_r - 1)
+	for (i = 0; n1[i]; i++)
+	;
+	for (j = 0; n2[j]; j++)
+	;
+	if (i > size_r || j > size_r)
+		return (0);
+	m = 0;
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
 	{
-		return 0;
-	}
-
-	carry = 0;
-	i = size_r - 2;
-
-	r[size_r - 1] = '\0';
-
-	while (i >= 0)
-	{
-		digit1 = (len1 > 0) ? n1[len1 - 1] - '0' : 0;
-		digit2 = (len2 > 0) ? n2[len2 - 1] - '0' : 0;
-
-		sum = digit1 + digit2 + carry;
-		carry = sum / 10;
-		r[i] = sum % 10 + '0';
-
-		i--;
-		len1--;
-		len2--;
-	}
-
-	if (carry)
-	{
-		if (size_r == 1)
+		n = m;
+		if (i >= 0)
+			n += n1[i] - '0';
+		if (j >= 0)
+			n += n2[j] - '0';
+		if (i < 0 && j < 0 && n == 0)
 		{
-			return 0;
+			break;
 		}
 
-		memmove(r + 1, r, size_r - 1);
-		r[0] = carry + '0';
+		m = n / 10;
+		r[k] = n % 10 + '0';
 	}
 
-	return r;
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
+		return (0);
+	for (k -= 1, l = 0; l < k; k--, l++)
+	{
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
+	}
+
+	return (r);
 }
