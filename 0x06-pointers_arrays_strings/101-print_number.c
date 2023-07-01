@@ -28,7 +28,7 @@ void print_number(int n)
 
 	while (temp > 9)
 	{
-		if (divisor > INT_MAX / 10)
+		if (divisor >= 2147483647 / 10)
 		{
 			return;
 		}
