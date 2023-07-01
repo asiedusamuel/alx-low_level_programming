@@ -24,7 +24,7 @@ char *rot13(char *str)
 		while (*pos != '\0')
 		{
 			if (*ptr == *pos)
-			{ 	
+			{
 				*ptr = rot13Alphabet[index];
 				break;
 			}
