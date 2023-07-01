@@ -24,6 +24,13 @@
 
 	#endif
 	
+	#ifndef PRINT_LINE_H
+	#define PRINT_LINE_H
+
+	print_line(char *c, int s, int l);
+
+	#endif
+	
 	#ifndef ADD_INFINITE_H
 	#define ADD_INFINITE_H
 
