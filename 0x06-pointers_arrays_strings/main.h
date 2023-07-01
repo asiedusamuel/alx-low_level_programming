@@ -24,10 +24,10 @@
 
 	#endif
 	
-	#ifndef PRINT_LINE_H
-	#define PRINT_LINE_H
+	#ifndef PRINT_BUFFER_H
+	#define PRINT_BUFFER_H
 
-	print_line(char *c, int s, int l);
+	print_buffer(char *b, int size);
 
 	#endif
 	
