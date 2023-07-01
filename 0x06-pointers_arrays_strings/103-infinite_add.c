@@ -13,6 +13,7 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
     int carry, i;
+    int digit1, digit2, sum;
 
     carry = 0;
     i = 0;
@@ -23,8 +24,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		{
             return 0;
         }
-
-        int digit1, digit2, sum;
 
         digit1 = (*n1 != '\0') ? *n1 - '0' : 0;
         digit2 = (*n2 != '\0') ? *n2 - '0' : 0;
