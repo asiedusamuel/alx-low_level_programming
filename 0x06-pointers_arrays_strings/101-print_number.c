@@ -17,7 +17,7 @@ void print_number(int n)
 		return;
 	}
 
-	if (n <= 2147483647) 
+	if (n <= -2147483647) 
 	{
         _putchar('-');
         print_number(-(n / 10));
