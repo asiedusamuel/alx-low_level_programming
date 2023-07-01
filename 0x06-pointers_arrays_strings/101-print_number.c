@@ -9,24 +9,39 @@
  */
 void print_number(int n)
 {
-	int digit, power;
-	
-	if (n < 0) {
-        _putchar('-');
-        n = -n;
-    }
+	int divisor, temp;
 
-    power = 1;
-	
-    while (power * 10 <= n) {
-        power *= 10;
-    }
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 
-    while (power > 0) {
-        digit = n / power;
-        _putchar('0' + digit);
-		
-        n %= power;
-        power /= 10;
-    }
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
+	divisor = 1;
+	temp = n;
+
+	while (temp > 9)
+	{
+		if (divisor > INT_MAX / 10)
+		{
+			return;
+		}
+
+		divisor *= 10;
+		temp /= 10;
+	}
+
+	while (divisor > 0)
+	{
+		int digit = n / divisor;
+		_putchar('0' + digit);
+		n %= divisor;
+		divisor /= 10;
+	}
 }
