@@ -11,11 +11,8 @@ char *leet(char *str)
 {
 	int i, j;
 	char *ptr = str;
-	char leetChars[], letters[];
-
-	leetChars[] = { '4', '3', '0', '7', '1' };
-
-	letters[] = { 'a', 'e', 'o', 't', 'l' };
+	char leetChars[] = { '4', '3', '0', '7', '1' };
+	char letters[] = { 'a', 'e', 'o', 't', 'l' };
 
 	while (*ptr != '\0')
 	{
