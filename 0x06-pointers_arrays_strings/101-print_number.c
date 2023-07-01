@@ -9,18 +9,24 @@
  */
 void print_number(int n)
 {
-	char digit;
-
+	int digit, power;
+	
 	if (n < 0) {
         _putchar('-');
+        n = -n;
     }
 
-	if (n / 10 != 0)
-	{
-		print_number(n / 10);
-	}
+    power = 1;
+	
+    while (power * 10 <= n) {
+        power *= 10;
+    }
 
-	digit = '0' + (n < 0 ? -n : n) % 10;
-
-	_putchar(digit);
+    while (power > 0) {
+        digit = n / power;
+        _putchar('0' + digit);
+		
+        n %= power;
+        power /= 10;
+    }
 }
