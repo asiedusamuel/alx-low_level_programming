@@ -2,17 +2,29 @@
 
 
 /**
- * swap_int - Swap the value of two integers
+ * puts_half - print half a strong
  *
- * @a: 1st integer to be swapped
- * @b: 2nd integer to be swapped
+ * @str: input string
  *
- * Return: Nothing
+ * Return: void
+ *
  */
 
-void swap_int(int *a, int *b)
+void puts_half(char *str)
 {
-	int temp = *a;
-	*a = *b;
-	*b = temp;
+	int i = 0;
+	int n;
+
+	while (str[i] != '\0')
+		i++;
+
+	if (i % 2 != 0)
+		n = (i + 1) / 2;
+	else
+		n = i / 2;
+
+	for (; str[n] != '\0'; n++)
+		_putchar(str[n]);
+
+	_putchar('\n');
 }
