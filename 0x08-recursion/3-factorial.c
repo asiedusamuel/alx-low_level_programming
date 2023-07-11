@@ -1,9 +1,5 @@
 #include "main.h"
-/**
- * _strlen_recursion - length of string
- * @s:string
- * Return:int
- */
+
 /**
  * factorial - factorial of int
  * @n:int
@@ -25,6 +21,6 @@ int factorial(int n)
 	{
 		x = n * factorial(n - 1);
 	}
-			return (x);
-
+	
+	return (x);
 }
